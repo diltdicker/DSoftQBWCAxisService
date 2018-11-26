@@ -1,6 +1,6 @@
 lib/*
 maven-repository/*
-build/*
+service/build/*
 target/*
 scripts/*
 wsdl/*
