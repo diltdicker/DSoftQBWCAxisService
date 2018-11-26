@@ -5,7 +5,7 @@
 
 * First download the required libs for compilation.
 
-```mvn dependency:copy-dependencies -DoutputDirectory=maven-repository
+```mvn dependency:copy-dependencies -DoutputDirectory=maven-repository```
 
 * Next run the ant script located in the (service) directory.
 
