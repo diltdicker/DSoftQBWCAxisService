@@ -1,0 +1,6 @@
+lib/*
+maven-repository/*
+build/*
+target/*
+scripts/*
+wsdl/*
