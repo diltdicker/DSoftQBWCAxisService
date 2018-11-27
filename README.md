@@ -1,5 +1,5 @@
 # DSoftQBWCAxisService
-Java Axis Service that handles connections from the QuickBooks Web Connector and implements qbxml requests/responses from a Webapp <https://github.com/diltdicker/DSoftQBWCWebApp> to allow for a more RESTful way of communicating with either a single or multiple instance(s) of QuickBooks Desktop Pro.
+SOAP server that handles connections from the QuickBooks Web Connector and implements qbxml requests/responses from a Webapp <https://github.com/diltdicker/DSoftQBWCWebApp> to allow for a more RESTful way of communicating with either a single or multiple instance(s) of QuickBooks Desktop Pro.
 
 ## How the Service works
 This service works in conjunction with <https://github.com/diltdicker/DSoftQBWCWebApp>.
@@ -14,7 +14,8 @@ To use your service, you must create a QWC file to distribute to client machines
 * Upload the AAR to the Axis2 servlet
 
 ## Modify Service
-* Skeleton file is located at _service/src/com/dickersonsoftware/intuit/DSoftQBWCSoapServiceSkeleton.java_ the methods: (These are documented in greater deatail <https://developer-static.intuit.com/qbSDK-current/doc/PDF/QBWC_proguide.pdf>)
+* Skeleton file is located at _service/src/com/dickersonsoftware/intuit/DSoftQBWCSoapServiceSkeleton.java_
+(The methods are documented in greater deatail <https://developer-static.intuit.com/qbSDK-current/doc/PDF/QBWC_proguide.pdf>)
     * connectionError :
     * sendRequestXML :
     * serverVersion : 
@@ -23,7 +24,7 @@ To use your service, you must create a QWC file to distribute to client machines
     * receiveResponseXML :
     * clientVersion : 
     * closeConnection :
-* Properties file is located at _service/resources/config.properties.xml_
+* The properties file is located at _service/resources/config.properties.xml_
     * mongo_host : mongodb hostname
     * mongo_port : mongodb port number
     * mongo_db : database name for the application
