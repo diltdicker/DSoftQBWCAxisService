@@ -4,3 +4,4 @@ service/build/*
 target/*
 scripts/*
 wsdl/*
+/target/

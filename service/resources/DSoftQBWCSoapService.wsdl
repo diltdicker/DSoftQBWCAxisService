@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <wsdl:definitions targetNamespace="http://developer.intuit.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://developer.intuit.com/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
-<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">WebService for QBFS created using ASP.NET to troubleshoot QuickBooks WebConnector</wsdl:documentation>
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">WebService for the DSoftQBWCWebapp that faclitates connections to QuickBooks WebConnector for QuickBooks Desktop Pro</wsdl:documentation>
   <wsdl:types>
     <s:schema elementFormDefault="qualified" targetNamespace="http://developer.intuit.com/">
       <s:element name="serverVersion">
@@ -397,7 +397,7 @@
     </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="DSoftQBWCSoapService">
-<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">WebService for QBFS created using ASP.NET to troubleshoot QuickBooks WebConnector</wsdl:documentation>
+<wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">WebService for the DSoftQBWCWebapp that faclitates connections to QuickBooks WebConnector for QuickBooks Desktop Pro</wsdl:documentation>
     <wsdl:port name="DSoftQBWCSoapServiceSoap12" binding="tns:DSoftQBWCSoapServiceSoap12">
       <soap12:address location="http://test.developer.intuit.com:83/QBWC/DSoftQBWCSoapService/Service.asmx"/>
     </wsdl:port>

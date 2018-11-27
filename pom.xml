@@ -30,40 +30,10 @@
   		<version>2.4</version>
   		<classifier>jdk15</classifier>
   	</dependency>
-  	<dependency>
-  		<groupId>org.glassfish.hk2.external</groupId>
-  		<artifactId>aopalliance-repackaged</artifactId>
-  		<version>2.5.0-b42</version>
-  	</dependency>
-  	<dependency>
+    <dependency>
   		<groupId>org.mongodb</groupId>
   		<artifactId>bson</artifactId>
   		<version>3.8.1</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>javax.enterprise</groupId>
-  		<artifactId>cdi-api</artifactId>
-  		<version>1.1</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>javax.el</groupId>
-  		<artifactId>javax.el-api</artifactId>
-  		<version>2.2.4</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.glassfish.hk2</groupId>
-  		<artifactId>hk2-api</artifactId>
-  		<version>2.5.0-b42</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.glassfish.hk2</groupId>
-  		<artifactId>hk2-locator</artifactId>
-  		<version>2.5.0-b42</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.glassfish.hk2</groupId>
-  		<artifactId>hk2-utils</artifactId>
-  		<version>2.5.0-b42</version>
   	</dependency>
   	<dependency>
   		<groupId>org.json</groupId>
@@ -71,120 +41,15 @@
   		<version>20180813</version>
   	</dependency>
   	<dependency>
-  		<groupId>org.javassist</groupId>
-  		<artifactId>javassist</artifactId>
-  		<version>3.22.0-CR2</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>javax.annotation</groupId>
-  		<artifactId>javax.annotation-api</artifactId>
-  		<version>1.2</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>javax.inject</groupId>
-  		<artifactId>javax.inject</artifactId>
-  		<version>1</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.glassfish.hk2.external</groupId>
-  		<artifactId>javax.inject</artifactId>
-  		<version>2.5.0-b42</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>javax.json.bind</groupId>
-  		<artifactId>javax.json.bind-api</artifactId>
-  		<version>1.0</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.glassfish</groupId>
-  		<artifactId>javax.json</artifactId>
-  		<version>1.1</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>javax.json</groupId>
-  		<artifactId>javax.json-api</artifactId>
-  		<version>1.1</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>javax.servlet</groupId>
-  		<artifactId>javax.servlet-api</artifactId>
-  		<version>3.0.1</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>javax.ws.rs</groupId>
-  		<artifactId>javax.ws.rs-api</artifactId>
-  		<version>2.1</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>javax.xml.bind</groupId>
-  		<artifactId>jaxb-api</artifactId>
-  		<version>2.2.7</version>
-  	</dependency>
-  	<dependency>
   		<groupId>org.mindrot</groupId>
   		<artifactId>jbcrypt</artifactId>
   		<version>0.4</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.jboss.spec.javax.interceptor</groupId>
-  		<artifactId>jboss-interceptors-api_1.1_spec</artifactId>
-  		<version>1.0.0.Beta1</version>
   	</dependency>
   	<dependency>
   		<groupId>org.jdom</groupId>
   		<artifactId>jdom2</artifactId>
   		<version>2.0.6</version>
   	</dependency>
-  	<dependency>
-  		<groupId>org.glassfish.jersey.core</groupId>
-  		<artifactId>jersey-client</artifactId>
-  		<version>2.27</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.glassfish.jersey.core</groupId>
-  		<artifactId>jersey-common</artifactId>
-  		<version>2.27</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.glassfish.jersey.containers</groupId>
-  		<artifactId>jersey-container-servlet</artifactId>
-  		<version>2.27</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.glassfish.jersey.containers</groupId>
-  		<artifactId>jersey-container-servlet-core</artifactId>
-  		<version>2.27</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.glassfish.jersey.inject</groupId>
-  		<artifactId>jersey-hk2</artifactId>
-  		<version>2.27</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.glassfish.jersey.media</groupId>
-  		<artifactId>jersey-media-jaxb</artifactId>
-  		<version>2.27</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.glassfish.jersey.media</groupId>
-  		<artifactId>jersey-media-json-binding</artifactId>
-  		<version>2.27</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.glassfish.jersey.media</groupId>
-  		<artifactId>jersey-media-sse</artifactId>
-  		<version>2.27</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.glassfish.jersey.core</groupId>
-  		<artifactId>jersey-server</artifactId>
-  		<version>2.27</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>javax.annotation</groupId>
-  		<artifactId>jsr250-api</artifactId>
-  		<version>1.0</version>
-	</dependency>
   	<dependency>
   		<groupId>org.mongodb</groupId>
   		<artifactId>mongodb-driver</artifactId>
@@ -194,31 +59,6 @@
   		<groupId>org.mongodb</groupId>
   		<artifactId>mongodb-driver-core</artifactId>
   		<version>3.8.1</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.osgi</groupId>
-  		<artifactId>org.osgi.core</artifactId>
-  		<version>4.2.0</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.glassfish.hk2</groupId>
-  		<artifactId>osgi-resource-locator</artifactId>
-  		<version>1.0.1</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>javax.persistence</groupId>
-  		<artifactId>persistence-api</artifactId>
-  		<version>1.0</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>javax.validation</groupId>
-  		<artifactId>validation-api</artifactId>
-  		<version>1.1.0.Final</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>org.eclipse</groupId>
-  		<artifactId>yasson</artifactId>
-  		<version>1.0</version>
   	</dependency>
   	<dependency>
   		<groupId>org.xerial</groupId>
