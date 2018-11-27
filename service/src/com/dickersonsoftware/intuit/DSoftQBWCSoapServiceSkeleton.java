@@ -33,7 +33,7 @@ public class DSoftQBWCSoapServiceSkeleton
     public com.intuit.developer.ConnectionErrorResponseDocument connectionError(
         com.intuit.developer.ConnectionErrorDocument connectionError0) {
 
-        System.out.println("connectionError - " + connectionError0.getConnectionError().getTicket());
+        //System.out.println("connectionError - " + connectionError0.getConnectionError().getTicket());
 
         com.intuit.developer.ConnectionErrorResponseDocument responseDocument = com.intuit.developer.ConnectionErrorResponseDocument.Factory.newInstance();
         com.intuit.developer.ConnectionErrorResponseDocument.ConnectionErrorResponse response = responseDocument.addNewConnectionErrorResponse();
@@ -53,7 +53,7 @@ public class DSoftQBWCSoapServiceSkeleton
     public com.intuit.developer.SendRequestXMLResponseDocument sendRequestXML(
         com.intuit.developer.SendRequestXMLDocument sendRequestXML2) {
 
-        System.out.println("sendRequestXML 2 - " + sendRequestXML2.getSendRequestXML().getTicket());
+        //System.out.println("sendRequestXML 2 - " + sendRequestXML2.getSendRequestXML().getTicket());
 
         SendRequestXMLResponseDocument responseDocument = SendRequestXMLResponseDocument.Factory.newInstance();
         SendRequestXMLResponseDocument.SendRequestXMLResponse xmlResponse = responseDocument.addNewSendRequestXMLResponse();
@@ -63,10 +63,10 @@ public class DSoftQBWCSoapServiceSkeleton
         if (queue.getQueueSize() > 0) {
             String req = queue.nextXMLRequest();
             xmlResponse.setSendRequestXMLResult(req);
-            System.out.println(req);
+            //System.out.println(req);
         } else {
             xmlResponse.setSendRequestXMLResult("");
-            System.out.println("No Requests");
+            //System.out.println("No Requests");
         }
         return responseDocument;
     }
@@ -95,7 +95,7 @@ public class DSoftQBWCSoapServiceSkeleton
     public com.intuit.developer.GetLastErrorResponseDocument getLastError(
         com.intuit.developer.GetLastErrorDocument getLastError6) {
 
-        System.out.println("getLastError 2 - " + getLastError6.getGetLastError().getTicket());
+        //System.out.println("getLastError 2 - " + getLastError6.getGetLastError().getTicket());
 
         com.intuit.developer.GetLastErrorResponseDocument responseDocument = com.intuit.developer.GetLastErrorResponseDocument.Factory.newInstance();
         com.intuit.developer.GetLastErrorResponseDocument.GetLastErrorResponse response = responseDocument.addNewGetLastErrorResponse();
@@ -134,7 +134,7 @@ public class DSoftQBWCSoapServiceSkeleton
             accountDocument = accountProxy.getDocument(new Document().append("username", username));
         } catch (Exception e) {
             e.printStackTrace();
-            System.out.println("Couldn't connect to DB");
+            //System.out.println("Couldn't connect to DB");
             array.setStringArray(new String[] {"nvu", ""});
         } finally {
             if (accountProxy != null) {
@@ -154,9 +154,9 @@ public class DSoftQBWCSoapServiceSkeleton
             }
         }
         response.setAuthenticateResult(array);
-        for (int i = 0; i < array.getStringArray().length; i++) {
-            System.out.println(array.getStringArray(i));
-        }
+//        for (int i = 0; i < array.getStringArray().length; i++) {
+//            System.out.println(array.getStringArray(i));
+//        }
         return responseDocument;
     }
 
@@ -169,7 +169,7 @@ public class DSoftQBWCSoapServiceSkeleton
     public com.intuit.developer.ReceiveResponseXMLResponseDocument receiveResponseXML(
         com.intuit.developer.ReceiveResponseXMLDocument receiveResponseXML10) {
 
-        System.out.println("receiveResponseXML - " + receiveResponseXML10.getReceiveResponseXML().getTicket());
+        //System.out.println("receiveResponseXML - " + receiveResponseXML10.getReceiveResponseXML().getTicket());
 
         com.intuit.developer.ReceiveResponseXMLResponseDocument responseDocument = com.intuit.developer.ReceiveResponseXMLResponseDocument.Factory.newInstance();
         com.intuit.developer.ReceiveResponseXMLResponseDocument.ReceiveResponseXMLResponse response = responseDocument.addNewReceiveResponseXMLResponse();
@@ -189,13 +189,13 @@ public class DSoftQBWCSoapServiceSkeleton
         DBResponseProxy responseProxy = DBProxyFactory.getResponses();
         responseProxy.createDocument(response1.toDocument());
         responseProxy.closeDBConnection();
-        System.out.println(response1.toDocument().toJson());
+        //System.out.println(response1.toDocument().toJson());
 
         DBRequestProxy requestProxy = DBProxyFactory.getRequests();
         requestProxy.deleteDocument(new Document().append("ticket",
                 receiveResponseXML10.getReceiveResponseXML().getTicket()).append("reqID", request.getReqID()));
         requestProxy.closeDBConnection();
-        System.out.println(RequestManager.getRequestManager().getRequestQueue(receiveResponseXML10.getReceiveResponseXML().getTicket()).getPercentComplete());
+        //System.out.println(RequestManager.getRequestManager().getRequestQueue(receiveResponseXML10.getReceiveResponseXML().getTicket()).getPercentComplete());
         response.setReceiveResponseXMLResult(RequestManager.getRequestManager().getRequestQueue(receiveResponseXML10.getReceiveResponseXML().getTicket()).getPercentComplete());
         return responseDocument;
     }
@@ -224,7 +224,7 @@ public class DSoftQBWCSoapServiceSkeleton
     public com.intuit.developer.CloseConnectionResponseDocument closeConnection(
         com.intuit.developer.CloseConnectionDocument closeConnection14) {
 
-        System.out.println("closeConnection - " + closeConnection14.getCloseConnection().getTicket());
+        //System.out.println("closeConnection - " + closeConnection14.getCloseConnection().getTicket());
 
         com.intuit.developer.CloseConnectionResponseDocument responseDocument = com.intuit.developer.CloseConnectionResponseDocument.Factory.newInstance();
         com.intuit.developer.CloseConnectionResponseDocument.CloseConnectionResponse response = responseDocument.addNewCloseConnectionResponse();
