@@ -24,7 +24,7 @@ To use your service, you must create a QWC file to distribute to client machines
     * receiveResponseXML :
     * clientVersion : 
     * closeConnection :
-* The properties file is located at _service/resources/config.properties.xml_
+* The properties file is located at _service/resources/config.properties_
     * mongo_host : mongodb hostname
     * mongo_port : mongodb port number
     * mongo_db : database name for the application
@@ -32,7 +32,7 @@ To use your service, you must create a QWC file to distribute to client machines
 ## Building AAR
 1. Make sure that you have properly set the **AXIS_HOME** environent variable.
 2. Download the required libs for compilation.
-        ```mvn dependency:copy-dependencies -DoutputDirectory=maven-repository```
+        ``mvn dependency:copy-dependencies -DoutputDirectory=maven-repository``
 
 3. Next run the ant script located in the (service) directory.
 4. The newly built .aar will appear in the (build) directory and will be ready for deployment.
